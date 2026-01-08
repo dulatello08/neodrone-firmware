@@ -16,4 +16,4 @@ Simple bare-metal firmware for ATSAMD21G1BA. Firmware will not be that complicat
 Run `make` to build the firmware.
 
 ## Flashing
-Run `make flash` to program via SWD (configure `openocd.cfg` first).
+Run `make flash` to program via SWD (todo: configure `openocd.cfg` first).

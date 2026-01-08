@@ -42,7 +42,6 @@ __attribute__((section(".vectors"))) const void *exception_table[] = {
     0,                       // Reserved
     (void *)PendSV_Handler,  // PendSV Handler
     (void *)SysTick_Handler, // SysTick Handler
-    // Add SAMD21 specific peripherals interrupts here...
 };
 
 void Reset_Handler(void) {
