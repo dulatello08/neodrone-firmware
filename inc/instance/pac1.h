@@ -1,9 +1,9 @@
 /**
  * \file
  *
- * \brief Top header file for SAMD21
+ * \brief Instance description for PAC1
  *
- * Copyright (c) 2013-2014 Atmel Corporation. All rights reserved.
+ * Copyright (c) 2014 Atmel Corporation. All rights reserved.
  *
  * \asf_license_start
  *
@@ -40,40 +40,20 @@
  * \asf_license_stop
  *
  */
-#ifndef _SAMD21_
-#define _SAMD21_
 
-/**
- * \defgroup SAMD21_definitions SAMD21 Device Definitions
- * \brief SAMD21 CMSIS Definitions.
- */
+#ifndef _SAMD21_PAC1_INSTANCE_
+#define _SAMD21_PAC1_INSTANCE_
 
-#if   defined(__SAMD21E15A__) || defined(__ATSAMD21E15A__)
-#include "samd21e15a.h"
-#elif defined(__SAMD21E16A__) || defined(__ATSAMD21E16A__)
-#include "samd21e16a.h"
-#elif defined(__SAMD21E17A__) || defined(__ATSAMD21E17A__)
-#include "samd21e17a.h"
-#elif defined(__SAMD21E18A__) || defined(__ATSAMD21E18A__)
-#include "samd21e18a.h"
-#elif defined(__SAMD21G15A__) || defined(__ATSAMD21G15A__)
-#include "samd21g15a.h"
-#elif defined(__SAMD21G16A__) || defined(__ATSAMD21G16A__)
-#include "samd21g16a.h"
-#elif defined(__SAMD21G17A__) || defined(__ATSAMD21G17A__)
-#include "samd21g17a.h"
-#elif defined(__SAMD21G18A__) || defined(__ATSAMD21G18A__)
-#include "samd21g18a.h"
-#elif defined(__SAMD21J15A__) || defined(__ATSAMD21J15A__)
-#include "samd21j15a.h"
-#elif defined(__SAMD21J16A__) || defined(__ATSAMD21J16A__)
-#include "samd21j16a.h"
-#elif defined(__SAMD21J17A__) || defined(__ATSAMD21J17A__)
-#include "samd21j17a.h"
-#elif defined(__SAMD21J18A__) || defined(__ATSAMD21J18A__)
-#include "samd21j18a.h"
+/* ========== Register definition for PAC1 peripheral ========== */
+#if (defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
+#define REG_PAC1_WPCLR             (0x41000000U) /**< \brief (PAC1) Write Protection Clear */
+#define REG_PAC1_WPSET             (0x41000004U) /**< \brief (PAC1) Write Protection Set */
 #else
-  #error Library does not support the specified device.
-#endif
+#define REG_PAC1_WPCLR             (*(RwReg  *)0x41000000U) /**< \brief (PAC1) Write Protection Clear */
+#define REG_PAC1_WPSET             (*(RwReg  *)0x41000004U) /**< \brief (PAC1) Write Protection Set */
+#endif /* (defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
-#endif /* _SAMD21_ */
+/* ========== Instance parameters for PAC1 peripheral ========== */
+#define PAC1_WPROT_DEFAULT_VAL      0x00000000
+
+#endif /* _SAMD21_PAC1_INSTANCE_ */

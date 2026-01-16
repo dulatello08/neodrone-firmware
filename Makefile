@@ -26,7 +26,7 @@ LDSCRIPT = $(LINKER_DIR)/samd21.ld
 CFLAGS  = -mcpu=cortex-m0plus -mthumb
 CFLAGS += -g -Wall -Wextra -O0
 CFLAGS += -I$(INC_DIR)
-# CFLAGS += -D__SAMD21G18A__ # Define specific part if needed for CMSIS
+CFLAGS += -D__SAMD21G18A__ # Define specific part for CMSIS
 
 # Linker flags
 LDFLAGS = -mcpu=cortex-m0plus -mthumb

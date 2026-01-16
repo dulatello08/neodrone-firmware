@@ -67,8 +67,6 @@ int main(void) {
         continue;
       }
 
-      // Note: Add Emergency Stop Logic here if needed beyond hardware pin
-
       // --- 3. Control Logic (PID) ---
       // Calculate Errors (Setpoint vs Actual)
       // Roll
